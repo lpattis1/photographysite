@@ -1,0 +1,153 @@
+body {
+  font-family: "Montserrat", sans-serif !important;
+  overflow-x: hidden;
+}
+
+.logo-name {
+  font-family: "Birthstone", cursive;
+  font-size: 10rem;
+  text-transform: uppercase;
+  letter-spacing: 1.5rem;
+  animation: blur1 12s ease 0s infinite;
+  -webkit-animation: blur1 12s ease 0s infinite;
+  -moz-animation: blur1 12s ease 0s infinite;
+}
+
+.logo-description {
+  font-size: 1.3rem;
+  animation: blur1 6s ease 0s infinite;
+  -webkit-animation: blur1 6s ease 0s infinite;
+  -moz-animation: blur1 6s ease 0s infinite;
+}
+
+.circle {
+  height: 2rem;
+  width: 2rem;
+  background-color: black;
+  transition: 0.2s ease-in-out all;
+  border-radius: 50%;
+  cursor: pointer;
+  position: absolute;
+  right: 0;
+}
+
+.circle:hover {
+  height: 2.3rem;
+  width: 2.3rem;
+  transition: 0.2s ease-in-out all;
+}
+
+.circle-menu {
+  position: relative;
+  right: 0 !important;
+}
+
+.circle {
+  position: absolute;
+  right: 0;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.menu {
+  position: absolute;
+  right: 0;
+  top: 4rem;
+
+  text-align: right;
+  list-style: none;
+  transition: 0.3s ease-in-out linear;
+}
+
+.menu-li {
+  margin-bottom: 1rem;
+}
+
+.menu-item {
+  text-decoration: none;
+  color: black;
+  font-weight: 400;
+  text-transform: uppercase;
+  width: 100%;
+  font-size: 1.3rem;
+  opacity: 0;
+}
+
+.menu-item:hover {
+  color: black;
+}
+
+/* dynamic menu position / hovering */
+
+.menu-open {
+  opacity: 0;
+}
+
+.menu-item--hover {
+  letter-spacing: 0.4rem;
+  font-weight: 500;
+  font-size: 1.4rem;
+}
+
+.logo-display {
+  transform: translateY(50%);
+}
+
+/* main images */
+.left {
+  cursor: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 101.1 85"><path fill="black" d="M17.7,45.6v.3L45.4,83.5,43.5,85,0,43V42L43.5,0l1.9,1.5L17.7,39.1v.3l83.4-1.5v9.2Z"/></svg>')
+      25 25,
+    auto;
+}
+
+.image-container {
+  margin-top: 7rem !important;
+}
+
+.left-img {
+  height: 30rem;
+  width: 35rem;
+  object-fit: cover;
+}
+
+.right-img {
+  height: 30rem;
+  width: 35rem;
+  object-fit: cover;
+}
+
+.right {
+  cursor: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 101.1 85"><path fill="black" d="M0,47.1V37.9l83.5,1.5v-.3L55.7,1.5,57.6,0l43.5,42v1L57.6,85l-1.9-1.5L83.5,45.9v-.3Z"/></svg>')
+      25 25,
+    auto;
+}
+
+/* animations */
+
+@keyframes blur1 {
+  0% {
+    filter: blur(0);
+  }
+
+  50% {
+    filter: blur(1rem);
+  }
+
+  100% {
+    filter: blur(0);
+  }
+}
+
+@keyframes blur2 {
+  0% {
+    filter: blur(0);
+  }
+
+  50% {
+    filter: blur(6px);
+  }
+
+  100% {
+    filter: blur(0);
+  }
+}
