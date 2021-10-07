@@ -107,6 +107,7 @@ body {
 .left-img {
   height: 30rem;
   width: 35rem;
+
   object-fit: cover;
 }
 
@@ -149,5 +150,75 @@ body {
 
   100% {
     filter: blur(0);
+  }
+}
+
+/* media queries */
+
+@media only screen and (max-width: 995px) {
+  .logo-display {
+    transform: translateY(150%) !important;
+  }
+  .logo-name {
+    font-size: 7rem;
+  }
+
+  .logo-description {
+    font-size: 1.1rem;
+  }
+}
+
+@media only screen and (max-width: 776px) {
+  .logo-display {
+    transform: translateY(190%) !important;
+  }
+  .logo-name {
+    font-size: 5.5rem;
+  }
+
+  .logo-description {
+    font-size: 1.1rem;
+  }
+}
+
+@media only screen and (max-width: 504px) {
+  .logo-display {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 732px) {
+  .left-img {
+    height: 20rem;
+    width: 25rem;
+  }
+
+  .right-img {
+    height: 20rem;
+    width: 25rem;
+  }
+}
+
+@media only screen and (max-width: 445px) {
+  .left-img {
+    height: 15rem;
+    width: 20rem;
+  }
+
+  .right-img {
+    height: 15rem;
+    width: 20rem;
+  }
+}
+
+@media only screen and (max-width: 362px) {
+  .left-img {
+    height: 10rem;
+    width: 15rem;
+  }
+
+  .right-img {
+    height: 10rem;
+    width: 15rem;
   }
 }
